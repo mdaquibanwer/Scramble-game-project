@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@1,700&family=Hanken+Grotesk:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+}
+header {
+    background-color: #2ed57e;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 15vh;
+    width: 100%;
+    font-family: 'Brygada 1918', serif;
+}
+header h1{
+    text-align: center;
+    color: #fafafa;
+    font-size: 2.5rem;
+    letter-spacing: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 0 .1rem 0 #efefef,0 .2rem 0 #efefef,0 .3rem 0 #efefef,0 .4rem 0 #efefef,0 3rem .5rem rgba(0,0,0,.1);
+}
+section{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7bed9f;
+    font-family: 'Hanken Grotesk', sans-serif;
+    position: relative;
+}
+
+section h3.score {
+    position: absolute;
+    top: 2rem;
+    right: 5rem;
+    font-size: 2rem;
+    color: #fafafa;
+    letter-spacing: 0.2rem;
+}
+.gameArea{
+    width: 50%;
+    height: 30rem;
+    background-color: #23d57e;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 .5rem .5rem -0.5rem #000;
+}
+.gameArea h3{
+    color: #fafafa;
+    text-align: center;
+    font-size: 2.2rem;
+}
+input{
+    width: 40%;
+    padding: 1.5rem 0;
+    text-align: center;
+    border-radius: 2.5rem;
+    border: none;
+    outline: none;
+    background-color: #dff9fb;
+    color: #000;
+    margin: 2rem 0;
+    font-size: 1.8rem;
+}
+input.hidden{
+    display: none;
+}
+button{
+    font-size: 2rem;
+    cursor: pointer;
+    border: #2f3542;
+    margin-top: 1rem;
+    outline: none;
+    color: #666;
+
+}
+button.btn{
+    padding: 1rem 2rem;
+    background-color: #fff;
+    text-transform: uppercase;
+    transition: all .2s cubic-bezier(0.65, -0.25, 0.25, 1.95);
+}
+.btn:hover,.btn:focus,.btn:active{
+    letter-spacing: .125rem;
+    word-spacing: .25rem;
+}
+@media (max-width:768px){
+    header h1{
+        font-size: 2rem;
+        letter-spacing: 1rem;
+    }
+    .gameArea{
+        width: 70%;
+    }
+}
+@media (max-width:500px){
+    :root{
+        font-size: 50%;
+    }
+    .gameArea{
+        width: 80%;
+        height: 40rem;
+    }
+    
+}
